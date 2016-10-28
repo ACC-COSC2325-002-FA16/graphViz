@@ -1,6 +1,9 @@
 digraph G {
+    labelloc = "t"; 
+    labeldistance = 3.0;
+    label = "RISC_CPU Architecture (simplified)\n\n";
+    rankdir = LR;
     node [shape = box];
-    shape = box;
     controller -> Icache;
     Icache -> Execute;
     Execute -> ALU;
