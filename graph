@@ -1,0 +1,13 @@
+digraph G {
+    node [shape = box];
+    shape = box;
+    controller -> Icache;
+    Icache -> Execute;
+    Execute -> ALU;
+    Execute -> FPU;
+    Execute -> MMX;
+    ALU -> Dcache;
+    FPU -> Dcache;
+    MMX -> Dcache;
+    Dcache -> BIOS;
+    }
