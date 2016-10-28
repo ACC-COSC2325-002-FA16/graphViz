@@ -1,9 +1,11 @@
 digraph G {
-    labelloc = "t"; 
-    labeldistance = 3.0;
-    label = "RISC_CPU Architecture (simplified)\n\n";
-    rankdir = LR;
-    node [shape = box];
+    labelloc = "t"; /* setting orientation of title to top */
+    label = "RISC_CPU Architecture (simplified)\n\n"; /*TITLE*/
+
+    rankdir = LR; /*Setting horizontal orientation*/
+    node [shape = box]; /*setting default shape to box*/
+
+    /*LINKS*/
     controller -> Icache;
     Icache -> Execute;
     Execute -> ALU;
